@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Abdul Ghaffar
+            </div>
+             <div class="right">
+             <ul>
+                <li><a href="/">HOME</a></li>
+                <li><a href="/">ABOUT</a></li>
+                <li><a href="/">SERVICES</a></li>
+                <li><a href="/">CONTACT ME</a></li>
+             </ul>
+         </div> 
+        <div class="search">
+            <input type="Search"  placeholder="Search to text" class="srch">
+            <input type="button" value="Search" class="btn">
+        </div>
+        </nav>
+    </header>
+    <section class="firstSection">
+        <div class="leftSection">
+            Hi, My Name is <span class="purple"> Abdul Ghaffar</span>
+            <div>& I am a passionate </div>
+            <span id="element"></span>
+        </div>
+        <div class="rightSection">
+        <img src="bg_right.png" alt="Loading Image">
+    </div>
+    </section>
+<hr>
+<section class="secondSection">
+    <div class="borders">
+    <div class="par">
+        <p>What i have done so far?</p>
+        <h1>Work Experience</h1>
+
+    </div>
+    
+     <div class="images">
+         <img src="flutter.png" alt="" class="img1">
+        <img src="web.png" alt="" class="img2">
+        <img src="Java.png" alt="" class="img3">
+        <img src="figma.png" alt="" class="img4">
+    </div> 
+
+    <div class="borderline">
+    <div class="blone">
+
+    </div>
+    <div class="blone"><h3>Flutter Developer</h3><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, doloribus vero sunt tenetur cum eligendi veniam eveniet blanditiis ab animi doloremque, unde eaque obcaecati laudantium possimus consequatur non a odit.</p></div>
+    <div class="blone"><h3>Web Developer</h3><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laboriosam id ea. Deserunt amet, architecto reiciendis natus voluptate laborum incidunt neque molestiae fugiat magni accusamus explicabo! Aspernatur aut non id.</p></div>
+    <div class="blone"><h3>Java Developer</h3><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil eveniet, corrupti officiis beatae iusto expedita ut in repellat! Temporibus, eligendi? Quos veritatis earum, incidunt maxime itaque nesciunt assumenda amet!</p></div>
+    <div class="blend"><h3>UX/UI Designer</h3><br><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aspernatur ex repellendus odio illo cupiditate, quaerat quisquam natus nemo ratione magnam dolore officiis, animi, quibusdam sed beatae veniam maiores ea?</p></div>
+</div>
+</div>
+</section>
+<hr>
+<div class="center">
+    <section class="thirdSection">
+        <div class="image">
+            <img src="1.jpg" alt="Loading Image">
+        </div>
+
+        <div class="about">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat officia voluptates beatae soluta consectetur laudantium odit repellat autem assumenda sapiente tempore perferendis vitae expedita deserunt, possimus, earum rerum nam atque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, ipsa quod? Optio excepturi et dolore? Officia iure, totam repudiandae aliquam hic, nam ducimus quaerat dolore voluptatibus ex fugit, incidunt quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, saepe tempora ab alias esse atque ipsa qui odio, laborum commodi suscipit neque eaque nihil autem id veniam. Animi, nostrum odit.</p>
+            <!-- <input type="button" value="Resume" class="down"> -->
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                    <li><span>App Development</span><br>Building Android/ios apps</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2023 - Current</span><br>Web & App Development Training at Aptech learning Institite</li>
+                    <li><span>2022 - 2023</span><br>Team Lead</li>
+                    <li><span>2020 - 2022</span><br>UI/UX Design</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <!-- <li><span>2020</span><br>Madical Deploma</li> -->
+                    <li><span>2020</span><br>Intermediate Complete</li>
+                    <li><span>2018</span><br>Matric Complete</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    
+</div>
+
+<script>
+   var tablinks = document.getElementsByClassName("tab-links");
+   var tabcontents = document.getElementsByClassName("tab-contents");
+
+   function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+     document.getElementById(tabname).classList.add("active-tab");
+     
+   }
+
+</script>
+
+
+
+
+
+<hr>
+
+  
+
+<section class="forthSection">
+    <div class="forthSection-info">
+        <h1>MY SERVICES</h1>
+        <P>A paragraph generator is an online software that generates a text based on <br> user-provided input. You can generate long paragraphs just by giving in input a <br>list of key words or a full sentence. </P>
+    </div>
+    <div class="boxcenter">
+        <div class="boxes">
+            <img src="flutter.png" alt="loading image"><br>Flutter Developer
+        </div>
+        <div class="boxes">
+            <img src="web.png" alt="Loading image"><br>Web Developer
+        </div>
+        <div class="boxes">
+            <img src="Java.png" alt="Loading image"><br>Java Developer
+        </div>
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid libero veniam, unde ad voluptatibus asperiores nemo maxime vel eligendi. Iure laudantium accusantium molestias est deleniti voluptate ratione doloribus ipsa ipsum!</p>
+    </div>
+</section>
+<hr>
+</body>
+</html>
